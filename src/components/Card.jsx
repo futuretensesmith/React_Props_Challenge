@@ -1,18 +1,18 @@
 import React from "react";
 import contacts from "../contacts";
 
-function Card(prop) {
+function Card(props) {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
       <div className="card">
         <div className="top">
-          <h2 className="name">{prop.name}</h2>
-          <img className="circle-img" src={prop.imgURL} alt="avatar_img" />
+          <h2 className="name">{props.name}</h2>
+          <img className="circle-img" src={props.imgURL} alt="avatar_img" />
         </div>
         <div className="bottom">
-          <p>{prop.phone}</p>
-          <p>{prop.email}</p>
+          <p className="info">{props.phone}</p>
+          <p className="info">{props.email}</p>
         </div>
       </div>
     </div>
